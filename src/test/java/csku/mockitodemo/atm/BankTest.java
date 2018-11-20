@@ -1,23 +1,33 @@
 package csku.mockitodemo.atm;
 
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-public class BankTest {
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertSame;
 
-	Bank bank;
-	FakeCustomer cust;
+class BankTest {
+
+	private Bank bank;
+	private FakeCustomer cust;
 
 	@BeforeEach
-	public void setup() {
+	void setup() {
 		bank = new Bank("MyBank");
 		cust = new FakeCustomer(1, 123, "Kwan");
 		bank.addCustomer(cust);
 	}
 
+	@Test
+	void testFindCustomer() {
+		Customer found = bank.findCustomerById(1);
+		assertNotNull(found);
+		assertSame(cust, found);
+	}
 
 	class FakeCustomer extends Customer {
 
-        public FakeCustomer(int id, int pin, String name) {
+        FakeCustomer(int id, int pin, String name) {
             super(id, pin, name);
         }
 

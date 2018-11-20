@@ -6,8 +6,8 @@ public class ATM {
     private Customer currentCustomer;
     private int state;
 
-    public static final int START = 1;
-    public static final int TRANSACT = 2;
+    private static final int START = 1;
+    private static final int TRANSACT = 2;
 
     public ATM(Bank bank) {
         this.bank = bank;

@@ -7,13 +7,13 @@ import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class BankCustomerTest {
+class BankCustomerTest {
 
-	Bank bank;
-	Customer cust;
+	private Bank bank;
+	private Customer cust;
 
 	@BeforeEach
-	public void setup() {
+	void setup() {
 		bank = new Bank("MyBank");
 		cust = new Customer(1, 123, "Kwan");
 		bank.addCustomer(cust);

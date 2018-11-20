@@ -11,13 +11,13 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.*;
 import static org.mockito.Mockito.when;
 
-public class BankDataServiceTestStubUsingMockito {
+class BankDataServiceTestStubUsingMockito {
 
     @Mock private IDataService stubDataService;
     private Bank bank;
 
     @BeforeEach
-    public void initMocks() {
+    void initMocks() {
         MockitoAnnotations.initMocks(this);
         bank = new Bank("MyBank", stubDataService);
     }

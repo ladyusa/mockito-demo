@@ -10,7 +10,7 @@ import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-public class DefaultControllerMockTest {
+class DefaultControllerMockTest {
 
     @Mock private Request stubRequest;
     @Mock private Response stubResponse;
@@ -20,7 +20,7 @@ public class DefaultControllerMockTest {
     private Controller controller;
 
     @BeforeEach
-    public void initMocks() {
+    void initMocks() {
         MockitoAnnotations.initMocks(this);
         controller = new DefaultController();
     }

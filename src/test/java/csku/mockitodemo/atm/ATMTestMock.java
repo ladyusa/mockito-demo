@@ -8,22 +8,21 @@ import org.mockito.MockitoAnnotations;
 import static org.mockito.Mockito.*;
 
 
-public class ATMTestMock {
+class ATMTestMock {
 
-    @Mock Bank stubBank;
-    @Mock Customer stubCustomer1;
-    @Mock Customer stubCustomer2;
-    @Mock BankAccount mockAccount1;
-    @Mock BankAccount mockAccount2;
+    @Mock private Bank stubBank;
+    @Mock private Customer stubCustomer1;
+    @Mock private Customer stubCustomer2;
+    @Mock private BankAccount mockAccount1;
+    @Mock private BankAccount mockAccount2;
 
     // CUT
     private ATM atm;
 
     @BeforeEach
-    public void initMocks() {
+    void initMocks() {
         MockitoAnnotations.initMocks(this);
         atm = new ATM(stubBank);
-
     }
 
     @Test

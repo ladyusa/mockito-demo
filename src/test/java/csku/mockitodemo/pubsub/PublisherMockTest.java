@@ -7,7 +7,7 @@ import org.mockito.MockitoAnnotations;
 
 import static org.mockito.Mockito.verify;
 
-public class PublisherMockTest {
+class PublisherMockTest {
 
     @Mock private Subscriber subscriber1;
     @Mock private Subscriber subscriber2;

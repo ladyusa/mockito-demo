@@ -8,9 +8,9 @@ import java.util.Iterator;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class BankDataServiceTest {
+class BankDataServiceTest {
 
-    Bank bank;
+    private Bank bank;
 
     @BeforeEach
     void setup() {
