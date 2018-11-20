@@ -26,7 +26,7 @@ public class Customer {
         this.id = id;
     }
 
-    public final boolean match(int pin) {
+    public boolean match(int pin) {
         return this.pin == pin;
     }
 
