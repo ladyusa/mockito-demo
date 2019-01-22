@@ -30,14 +30,6 @@ public class Customer {
         return this.pin == pin;
     }
 
-    public void setPin(int pin) {
-        this.pin = pin;
-    }
-
-    public int getPin() {
-        return pin;
-    }
-
     public String getName() {
         return name;
     }
