@@ -17,7 +17,7 @@ class PublisherMockTest {
 
     @BeforeEach
     void initMocks() {
-        MockitoAnnotations.initMocks(this);
+        MockitoAnnotations.openMocks(this);
         publisher = new DefaultPublisher();
     }
 

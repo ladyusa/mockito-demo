@@ -21,7 +21,7 @@ class ATMTestMock {
 
     @BeforeEach
     void initMocks() {
-        MockitoAnnotations.initMocks(this);
+        MockitoAnnotations.openMocks(this);
         atm = new ATM(stubBank);
     }
 

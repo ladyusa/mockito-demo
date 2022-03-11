@@ -21,7 +21,7 @@ class DefaultControllerMockTest {
 
     @BeforeEach
     void initMocks() {
-        MockitoAnnotations.initMocks(this);
+        MockitoAnnotations.openMocks(this);
         controller = new DefaultController();
     }
 
