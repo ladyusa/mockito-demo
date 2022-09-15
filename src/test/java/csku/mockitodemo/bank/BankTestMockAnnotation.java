@@ -1,6 +1,5 @@
 package csku.mockitodemo.bank;
 
-import csku.mockitodemo.hr.HumanResourceService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
@@ -24,6 +23,7 @@ public class BankTestMockAnnotation {
 
     @Test
     void testTransfer() {
+        // stubbing
         when(mockAccountA.getName()).thenReturn("A");
         when(mockAccountB.getName()).thenReturn("B");
 

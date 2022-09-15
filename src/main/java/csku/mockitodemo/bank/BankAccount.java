@@ -28,4 +28,12 @@ public class BankAccount {
     public void setName(String name) {
         this.name = name;
     }
+
+    @Override
+    public String toString() {
+        return "BankAccount{" +
+                "name='" + name + '\'' +
+                ", balance=" + balance +
+                '}';
+    }
 }
